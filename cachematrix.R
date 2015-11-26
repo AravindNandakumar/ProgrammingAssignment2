@@ -1,6 +1,6 @@
 
 makeCacheMatrix <- function(x = matrix()) {
-  ## x is a invertible matrix
+  ## x is invertible matrix
   ## function to set matrix
   ## function to get matrix
   ## function to set inverse
@@ -25,8 +25,8 @@ cacheSolve <- function(x, ...) {
 inv<- x$getinv()
 ## Checking if the inverse is already calculated
 if(!is.null(inv)){
-  
-  message("getting cached data")
+    message("getting cached data")
+  ## Get inverse from Cache
   return(inv)
 }
 data <-x$get()
